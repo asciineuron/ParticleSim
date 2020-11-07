@@ -125,15 +125,15 @@ int main()
 	// glfw caps at 60fps
 	array_len sphere_vertices = import_vertices("sphere.obj");
 
-	/*Particle a = { glm::vec3(5.0f, 0.0f, 0.0f), glm::vec3(-0.00f, 0.0f, -0.1f), 0.5f, 5.0f };
+	Particle a = { glm::vec3(5.0f, 0.0f, 0.0f), glm::vec3(-0.00f, 0.0f, -0.1f), 0.5f, 5.0f };
 	Particle b = { glm::vec3(-5.0f, 0.0f, 0.0f), glm::vec3(0.00f, 0.0f, 0.1f), 0.5f, 5.0f };
-	Particle c = { glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.001f, 0.0f), -0.5f, 100.0f };*/
-	Particle a = { glm::vec3(-10.0f, 3.0f, 0.0f), glm::vec3(0.02f, 0.0f, 0.0f), 0.3f, 10.0f };
-	Particle b = { glm::vec3(2.0f, -5.0f, 0.0f), glm::vec3(-0.02f, 0.0f, 0.0f), -0.3f, 10.0f };
+	Particle c = { glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.001f, 0.0f), -0.5f, 100.0f };
+	//Particle a = { glm::vec3(-10.0f, 3.0f, 0.0f), glm::vec3(0.02f, 0.0f, 0.0f), 0.3f, 10.0f };
+	//Particle b = { glm::vec3(2.0f, -5.0f, 0.0f), glm::vec3(-0.02f, 0.0f, 0.0f), -0.3f, 10.0f };
 	std::vector<Particle> particles;
 	particles.push_back(a);
 	particles.push_back(b);
-	//particles.push_back(c);
+	particles.push_back(c);
 
 	GLFWwindow* glwindow = init_window();
 	GLData* gldata = init_gl(sphere_vertices.arr, sphere_vertices.len, NULL, 0);
